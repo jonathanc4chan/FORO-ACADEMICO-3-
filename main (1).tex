@@ -1,0 +1,105 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[margin=2.4cm, letterpaper]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{times} 
+\usepackage{setspace}
+\usepackage{hanging}
+
+\setlength{\parindent}{0pt}       
+\onehalfspacing                  
+\usepackage{titlesec}
+
+
+\titleformat{\section}
+  {\normalfont\large\bfseries\raggedright}
+  {\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{1ex}
+
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{xurl}
+\begin{document}
+
+\begin{center}
+    {\large\textbf{DISEÑO SEGUN LA APLICACION A DESARROLLAR}} \\[1.5ex]
+    \textit{J. J. CHÁN CUELLAR } \\[1.5ex]
+    7690-22-1805 \quad Universidad Mariano Gálvez \\[1.0ex]
+    Seminario de Tecnologías de Información \\[1.0ex]
+    \textit{jchanc4@miumg.edu.gt}
+\end{center}
+\vspace{1em}
+\section*{2.Resumen}
+El presente trabajo tiene como objetivo principal analizar los factores técnicos y organizacionales que determinan la selección adecuada de una arquitectura de software para el desarrollo de aplicaciones. A lo largo del documento, se examinaron elementos que van más allá del tipo de sistema a crear, enfocándose en los atributos de calidad, tales como la seguridad, el rendimiento, la mantenibilidad y la disponibilidad, los cuales permiten adaptar el desarrollo a requerimientos específicos. Como resultados del análisis, se determinó que la estructura de los equipos de trabajo y el crecimiento esperado del sistema influyen directamente en la viabilidad de implementar enfoques centralizados o distribuidos. Al evaluar arquitecturas como los monolitos modulares, los microservicios y los sistemas orientados a eventos, se evidenció que una correcta separación de responsabilidades y la reducción de dependencias son vitales para disminuir la deuda técnica. Se llego a la conclusion que la toma de decisiones arquitectónicas no debe fundamentarse de manera exclusiva en tendencias tecnológicas. Para garantizar el éxito a largo plazo, es imprescindible lograr un equilibrio estratégico que integre las necesidades reales del negocio, los recursos presupuestarios, las limitaciones de tiempo y la experiencia del equipo de desarrollo.
+
+
+\vspace{1em}
+
+\noindent\textbf{3.Palabras claves:}Arquitectura de software, atributos de calidad, escalabilidad, microservicios, mantenibilidad.
+\vspace{1em}
+
+\section*{4.Desarrollo del tema}
+Cuando se desarrolla una aplicación, una de las decisiones más importantes es elegir la estructura o forma en que estará organizada internamente. Muchas veces se piensa que la arquitectura de software depende únicamente del tipo de aplicación que se va a crear, pero en realidad existen otros factores que tienen un impacto mucho mayor. Aspectos como la velocidad de respuesta, la seguridad, la facilidad de mantenimiento y la cantidad de usuarios que utilizarán el sistema son elementos que influyen directamente en esta decisión. Por esta razón, seleccionar una arquitectura adecuada es fundamental para garantizar que el sistema pueda cumplir sus objetivos a corto y largo plazo. De acuerdo con Clements y Kazman (2022), los atributos de calidad desempeñan un papel fundamental en la selección de una arquitectura, ya que permiten evaluar el comportamiento y desempeño esperado del sistema.
+
+Uno de los aspectos más importantes al momento de elegir una arquitectura son los atributos de calidad. Estos permiten determinar qué tan bien funciona una aplicación más allá de sus funciones principales. Por ejemplo, una aplicación bancaria puede priorizar la seguridad y la confiabilidad, mientras que una plataforma de comercio electrónico puede enfocarse más en la disponibilidad y la capacidad de atender miles de usuarios al mismo tiempo. Esto demuestra que no existe una única arquitectura ideal para todos los proyectos, sino que cada solución debe adaptarse a las necesidades específicas del entorno donde será utilizada. En este sentido, Richards y Ford (2020) indican que la arquitectura debe responder a los requerimientos y limitaciones particulares de cada organización.
+
+Importante considerar la forma en que trabajan los equipos de desarrollo. A medida que una organización crece, aumentan las necesidades de coordinación entre las personas que participan en el proyecto. En equipos pequeños suele ser más sencillo trabajar con aplicaciones centralizadas, mientras que organizaciones más grandes pueden requerir arquitecturas distribuidas que permitan desarrollar y actualizar diferentes partes del sistema de forma independiente. Según Newman (2021), este tipo de enfoques favorece la escalabilidad tanto de las aplicaciones como de los equipos encargados de su desarrollo.
+
+Dentro de las arquitecturas más utilizadas se encuentran los monolitos modulares, los microservicios y las arquitecturas orientadas a eventos. Los monolitos modulares son adecuados para sistemas empresariales donde se requiere una fuerte integración entre los componentes y una administración más sencilla. Por otro lado, los microservicios permiten dividir la aplicación en servicios independientes que pueden desarrollarse y desplegarse por separado, aunque también incrementan la complejidad de administración. Finalmente, las arquitecturas orientadas a eventos destacan por su capacidad para procesar grandes cantidades de información en tiempo real y responder de manera eficiente a cambios constantes dentro del sistema.
+
+Aspectos relevantes es mantener una adecuada organización del código y reducir las dependencias innecesarias entre componentes. Cuando cada módulo tiene responsabilidades claramente definidas y existe una separación adecuada entre las distintas capas de la aplicación, resulta más sencillo realizar modificaciones, corregir errores y agregar nuevas funcionalidades. Esta práctica contribuye directamente a la mantenibilidad del sistema y disminuye la deuda técnica a largo plazo.
+
+La selección de una arquitectura de software no debe basarse únicamente en tendencias tecnológicas o preferencias personales. Es necesario analizar cuidadosamente los requerimientos del proyecto, los atributos de calidad que se desean alcanzar y las condiciones reales de operación del sistema. Una decisión adecuada desde las etapas iniciales puede marcar la diferencia entre una aplicación difícil de mantener y una solución capaz de evolucionar y adaptarse a las necesidades futuras.
+
+Una arquitectura es el crecimiento esperado del sistema. Muchas aplicaciones comienzan siendo proyectos pequeños, pero con el tiempo pueden aumentar considerablemente su número de usuarios y funcionalidades. Por esta razón, es importante considerar desde las etapas iniciales cómo podrá evolucionar la aplicación en el futuro. Una arquitectura adecuada permite realizar cambios y ampliaciones sin necesidad de reconstruir completamente el sistema, reduciendo costos y esfuerzos de mantenimiento.
+
+la toma de decisiones arquitectónicas no debe realizarse únicamente desde una perspectiva técnica. También es necesario considerar aspectos relacionados con el presupuesto disponible, el tiempo de desarrollo y la experiencia del equipo encargado del proyecto. En algunos casos, implementar una arquitectura muy compleja puede generar más dificultades que beneficios. Por ello, la mejor solución suele ser aquella que logra un equilibrio entre las necesidades del negocio, los recursos disponibles y los objetivos que se desean alcanzar.
+
+\vspace{1em}
+
+\section*{5.Observaciones y comentarios}
+El éxito de una arquitectura de software depende en gran medida de las caracteristicas y estructura organizacional del equipo. Implementar microservicios en equipos reducidos suele generar una sobrecarga operativa innecesaria, mientras que mantener monolitos en organizaciones grandes limita la agilidad. por eso se tiene que evaluar que tipo de arquitectura usar dependiento el tamaño y para que se va usar el app.
+
+
+\vspace{1em}
+
+\section*{6.Conclusiones}
+\begin{enumerate}
+    \item La selección de una arquitectura de software trasciende el tipo de aplicación y debe fundamentarse prioritariamente en los atributos de calidad deseados. Factores como la seguridad, el rendimiento y la disponibilidad son los verdaderos determinantes para garantizar que el sistema cumpla con sus objetivos operativos a corto y largo plazo.
+    
+    \item Las decisiones arquitectónicas no son de carácter exclusivamente técnico, sino que están profundamente ligadas a factores organizacionales. El éxito de un proyecto requiere alinear la complejidad del diseño con el tamaño del equipo de desarrollo, su nivel de experiencia, el presupuesto asignado y los tiempos de entrega disponibles.
+    
+    \item Mantener una clara separación de responsabilidades y minimizar las dependencias entre módulos es crucial independientemente del patrón de diseño elegido. Esta práctica de organización estructurada facilita la corrección de errores, agiliza la incorporación de nuevas funcionalidades y reduce significativamente la deuda técnica acumulada durante el ciclo de vida del software.
+    
+    \item No existe una arquitectura perfecta para todos los casos; la mejor elección será la que se adapte a las necesidades del negocio, el entorno y los recursos disponibles.
+\end{enumerate}
+\vspace{1em}
+\section*{7. Bibliografía}
+
+\hangindent=1cm \noindent Anzueto Marroquín, F. R. (2020). \textit{Tesis de grado}. Repositorio Institucional USAC. \url{http://www.repositorio.usac.edu.gt/19395/1/Francisco%20Rogelio%20Anzueto%20Marroquin%20200611559.pdf}
+
+\vspace{4pt}
+\hangindent=1cm \noindent Marroquín González, R. G. (2023). \textit{Tesis de grado} (S. A. Chilin Bolaños, Asesor). Repositorio Institucional USAC. \url{http://www.repositorio.usac.edu.gt/18556/1/Rolando%20Giovanni%20Marroqu%C3%ADn%20Gonz%C3%A1lez.pdf}
+
+\vspace{4pt}
+\hangindent=1cm \noindent Orozco Santolino, J. R. (s.f.). \textit{Tesis de maestría}. Maestría en Artes en Tecnología, Universidad de San Carlos de Guatemala. Repositorio Institucional USAC. \url{http://www.repositorio.usac.edu.gt/12112/1/Jorge%20Ra%C3%BAl%20Orozco%20Santolino.pdf}
+
+\vspace{4pt}
+\hangindent=1cm \noindent Sique, W. D. (s.f.). \textit{Tesis de grado}. Escuela de Ingeniería en Ciencias y Sistemas, Universidad de San Carlos de Guatemala. \url{https://biblio.ingenieria.usac.edu.gt/tesis19/T14916.pdf}
+
+\vspace{4pt}
+\hangindent=1cm \noindent Universidad de San Carlos de Guatemala. (s.f.-a). \textit{Aplicación de patrones de diseño en el diseño de arquitecturas orientadas a servicios} [Tesis de grado]. Biblioteca USAC. \url{http://biblioteca.usac.edu.gt/tesis/08/08_0584_CS.pdf}
+
+\vspace{4pt}
+\hangindent=1cm \noindent Universidad de San Carlos de Guatemala. (s.f.-d). \textit{Diseño de un modelo} [Tesis de grado]. Biblioteca USAC. \url{http://biblioteca.usac.edu.gt/tesis/08/08_1101_CS.pdf}
+
+\vspace{4pt}
+\hangindent=1cm \noindent Universidad de San Carlos de Guatemala. (s.f.-f). \textit{Propuesta de análisis y diseño basada en UML y UWE para la migración de arquitectura de software centralizada hacia internet} [Tesis de grado]. \url{https://biblio.ingenieria.usac.edu.gt/tesis/T9795.pdf}
+
+\section*{Repositorio del proyecto}
+
+El código fuente y el documento en \LaTeX{} se encuentran disponibles en el siguiente repositorio de GitHub:
+
+\url{https://github.com/jonathanc4chan/FORO-ACADEMICO-3-.git}
+\end{document}
